@@ -1,4 +1,3 @@
-Python
 import sys
 
 from globalLog import ta_log
