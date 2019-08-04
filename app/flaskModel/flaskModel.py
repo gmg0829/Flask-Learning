@@ -12,9 +12,6 @@ with open(f'./diabetes-model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 
-
-
-
 app = Flask(__name__)
 CORS(app)
 
