@@ -6,3 +6,11 @@ docker run --name flask_app -v $PWD/app:/app -p 5000:5000 flask:0.1
 
 docker run -it --name flaskapp -p 5000:5000 -v $PWD/app:/app docker-flask:0.1 -d debug
 
+
+
+## gunicorn
+
+pip install gunicorn
+
+gunicorn -w 4 -b 127.0.0.1:8080 flaskDemo:hello
+
